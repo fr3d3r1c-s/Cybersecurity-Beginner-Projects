@@ -1,1 +1,16 @@
+# Project 1: Home Network Security Audit
 
+## Objective
+To identify all active devices on my local network and establish a baseline for security monitoring.
+
+## Execution & Tools
+- **Tool:** Nmap 7.98
+- **Command:** `nmap -sn 192.168.1.0/24`
+
+## Findings
+The scan discovered 2 active hosts:
+1. **192.168.1.1** - Default Gateway (Shenzhen Sdmc Technology)
+2. **192.168.1.3** - Local Workstation (My PC)
+
+## Summary
+The discovery scan was successful. The next phase will involve service scanning to identify potential vulnerabilities on the gateway.
