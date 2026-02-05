@@ -14,3 +14,21 @@ The scan discovered 2 active hosts:
 
 ## Summary
 The discovery scan was successful. The next phase will involve service scanning to identify potential vulnerabilities on the gateway.
+
+### Phase 2: Vulnerability Research (CVE Check)
+I cross-referenced the identified hardware manufacturer (Shenzhen Sdmc) with global vulnerability databases.
+- **Source:** NIST National Vulnerability Database (NVD)
+- **Search Query:** "Shenzhen Sdmc Technology
+
+### Phase 3: Critical Vulnerability Identified (CVE-2025-8890)
+During the audit, a critical vulnerability was identified related to the Shenzhen SDMC hardware.
+
+- **Vulnerability ID:** CVE-2025-8890
+- **Source:** CERT Polska
+- **Description:** A critical flaw affecting SDMC NE6037 routers (firmware versions < 7.1.12.2.44), potentially impacting device integrity.
+- **Risk Level:** Critical
+
+### Final Findings & Status:
+1. **Firmware Verification:** Checked the router administration panel. The current firmware version is **S09.44.03.029**.
+2. **Update Check:** Confirmed that manual update options are disabled by the ISP (Managed Service). 
+3. **Conclusion:** The audit of the home network gateway is complete. No further actions can be taken by the user regarding firmware patches at this time.
